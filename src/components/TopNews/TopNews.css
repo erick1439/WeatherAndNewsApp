@@ -1,0 +1,79 @@
+.background {
+    background-color: rgb(0,0,0,0.75);
+    position: absolute !important;
+    right: 0 !important;
+    left: 0 !important;
+    top: 46%;
+}
+.card-header{
+    background-color:rgb(25, 135, 84, 0.2) !important;
+}
+.news {
+    margin: 20px 50px 20px 50px;
+    box-sizing: border-box;
+}
+.carousel-inner{
+    height: 80vh;
+}
+.carousel-indicators{
+    margin: 0px auto !important;
+}
+.news .news-img {
+    box-sizing: border-box;
+    width: inherit;
+    height: 100vh !important;
+}
+.button {
+    margin-bottom: 30px;
+}
+
+.moreNewsBar {
+    margin-top: 20px;
+}
+.cardsContainer {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 15px 0px 0px 0px;
+    row-gap: 15px;
+    column-gap: 100px;
+}
+@media only screen and (max-width: 1000px) {
+    .cardsContainer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .background{
+        top: 15% !important;
+        padding: 10px;
+    }
+    .carousel-inner{
+        height: 60vh !important;
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+    .cardsContainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .background{
+        top: 15% !important;
+        padding: 10px;
+    }
+    .background h3 {
+        font-size: 1rem !important;
+    }
+    .background p, button {
+        font-size: 0.8rem !important;
+    }
+    .carousel-inner{
+        height: 60vh !important;
+    }
+}
+.card-title {
+    text-align: center;
+}
